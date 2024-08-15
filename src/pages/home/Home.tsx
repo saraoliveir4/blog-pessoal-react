@@ -1,15 +1,16 @@
 import React from "react";
 import "./Home.css";
 
-function Home() {
+interface minhaProps {
+  title: string;
+  description: string;
+}
+
+function Home(props: minhaProps) {
   return (
     <>
-      <h1 className="titulo">Home</h1>
-      <img
-        src="https://images.pexels.com/photos/1472999/pexels-photo-1472999.jpeg?auto=compress&cs=tinysrgb&w=600"
-        alt="Imagem Tela Inicial"
-        className="img"
-      />
+      <h2 className="titulo">{props.title}</h2>
+      <p>{props.description}</p>
     </>
   );
 }
