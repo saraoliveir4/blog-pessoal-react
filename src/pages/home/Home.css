@@ -1,0 +1,12 @@
+.titulo{
+    color: pink;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium';
+}
+
+.img{
+    width: 750px;
+    height: 500px;
+    display: block;
+    margin: 0 auto;
+}
