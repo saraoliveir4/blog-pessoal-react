@@ -1,5 +1,6 @@
 import React from "react";
 import "./Home.css";
+import girlImage from '../../assets/girl.png';
 
 function Home() {
   return (
@@ -8,7 +9,7 @@ function Home() {
         <div className="container grid grid-cols-2 text-white">
           <div className="flex flex-col gap-4 items-center justify-center py-4">
             <h2 className="text-5xl font-bold">
-              Oi! Que bom ter você está aqui!
+              Oi! Que bom ter você aqui!
             </h2>
             <p className="text-xl">
               Participe das nossas discussões sobre músicas, filmes e séries!
@@ -23,8 +24,8 @@ function Home() {
 
           <div className="flex justify-center ">
             <img
-              src="https://img.pikbest.com/png-images/qiantu/original-music-listening-girl-illustration_2737011.png!sw800"
-              alt=""
+              src= {girlImage}
+              alt="Garota com headphone ouvindo música"
               className="w-2/3"
             />
           </div>
