@@ -10,6 +10,9 @@ import { AuthProvider } from "./contexts/AuthContext";
 import ListaTemas from "./components/temas/listaTemas/ListaTemas";
 import FormularioTemas from "./components/temas/formularioTemas/FormularioTemas";
 import DeletarTema from './components/temas/deletarTemas/DeletarTemas';
+import ListaPostagens from './components/postagens/listaPostagens/ListaPostagens';
+import FormularioPostagem from './components/postagens/formularioPostagens/FormularioPostagens';
+import DeletarPostagem from './components/postagens/deletarPostagens/DeletarPostagens';
 
 function App() {
   return (
@@ -27,6 +30,10 @@ function App() {
               <Route path="/cadastrarTema" element={<FormularioTemas />} />
               <Route path="/editarTema/:id" element={<FormularioTemas />} />
               <Route path="/deletarTema/:id" element={<DeletarTema />} />
+              <Route path="/postagens" element={<ListaPostagens />} />
+              <Route path="/cadastrarPostagem" element={<FormularioPostagem />} />
+              <Route path="/editarPostagem/:id" element={<FormularioPostagem />} />
+              <Route path="/deletarPostagem/:id" element={<DeletarPostagem />} />
             </Routes>
           </div>
           <Footer />
