@@ -142,15 +142,15 @@ function FormularioPostagem() {
 
       <form onSubmit={gerarNovaPostagem} className="flex flex-col w-1/2 gap-4">
         <div className="flex flex-col gap-2">
-          <label htmlFor="titulo">Titulo da postagem</label>
+          <label htmlFor="titulo">Título da postagem</label>
           <input
             value={postagem.titulo}
             onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
             type="text"
-            placeholder="Titulo"
+            placeholder="Título"
             name="titulo"
             required
-            className="border-2 border-slate-700 rounded p-2"
+            className="border border-slate-700 rounded-2xl p-1.5 font-mono"
           />
         </div>
         <div className="flex flex-col gap-2">
@@ -162,12 +162,12 @@ function FormularioPostagem() {
             placeholder="Texto"
             name="texto"
             required
-            className="border-2 border-slate-700 rounded p-2"
+            className="border border-slate-700 rounded-2xl p-1.5 font-mono"
           />
         </div>
         <div className="flex flex-col gap-2">
           <p>Tema da postagem</p>
-          <select name="tema" id="tema" className='border p-2 border-slate-800 rounded' onChange={(e) => buscarTemaPorId(e.currentTarget.value)}>
+          <select name="tema" id="tema" className='border border-slate-700 rounded-2xl p-1.5 font-mono' onChange={(e) => buscarTemaPorId(e.currentTarget.value)}>
             <option value="" selected disabled>Selecione um tema</option>
             {temas.map((tema) => (
               <>
@@ -176,7 +176,7 @@ function FormularioPostagem() {
             ))}
           </select>
         </div>
-        <button disabled={carregandoTema} type='submit' className='rounded disabled:bg-slate-200 bg-indigo-400 hover:bg-indigo-800 text-white font-bold w-1/2 mx-auto block py-2'>
+        <button disabled={carregandoTema} type='submit' className='disabled:bg-slate-200 rounded-2xl font-mono bg-red-400 hover:bg-cyan-500 text-white font-bold w-1/2 mx-auto block py-1.5'>
           {carregandoTema ? <span>Carregando</span> : id !== undefined ? 'Editar' : 'Cadastrar'}
         </button>
       </form>

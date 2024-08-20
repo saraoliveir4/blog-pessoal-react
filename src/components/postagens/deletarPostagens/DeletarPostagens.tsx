@@ -65,19 +65,19 @@ function DeletarPostagem() {
   }
   return (
     <div className='container w-1/3 mx-auto'>
-      <h1 className='text-4xl text-center my-4'>Deletar postagem</h1>
+      <h1 className='font-mono text-4xl text-center my-4'>Deletar postagem</h1>
 
-      <p className='text-center font-semibold mb-4'>Você tem certeza de que deseja apagar a postagem a seguir?</p>
+      <p className='font-mono text-center font-semibold mb-4'>Você tem certeza de que deseja apagar a postagem a seguir?</p>
 
       <div className='border flex flex-col rounded-2xl overflow-hidden justify-between'>
-        <header className='py-2 px-6 bg-indigo-600 text-white font-bold text-2xl'>Postagem</header>
+        <header className='py-2 px-6 bg-cyan-800 text-white font-bold text-2xl font-mono'>Postagem</header>
         <div className="p-4">
-          <p className='text-xl h-full'>{postagem.titulo}</p>
-          <p>{postagem.texto}</p>
+          <p className='text-xl h-full font-mono font-bold'>{postagem.titulo}</p>
+          <p className='font-mono'>{postagem.texto}</p>
         </div>
         <div className="flex">
-          <button className='text-slate-100 bg-red-400 hover:bg-red-600 w-full py-2' onClick={retornar}>Não</button>
-          <button className='w-full text-slate-100 bg-indigo-400 hover:bg-indigo-600 flex items-center justify-center' onClick={deletarPostagem}>
+          <button className='font-mono text-slate-100 bg-red-400 hover:bg-red-700 w-full py-2' onClick={retornar}>Não</button>
+          <button className='font-mono w-full text-slate-100 bg-cyan-500 hover:bg-cyan-800 flex items-center justify-center' onClick={deletarPostagem}>
             Sim
           </button>
         </div>

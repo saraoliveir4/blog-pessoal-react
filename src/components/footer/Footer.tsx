@@ -16,10 +16,10 @@ function Footer() {
   if (usuario.token !== "") {
     footerComponent = (
       <>
-        <div className="flex justify-center bg-gradient-to-r from-purple-500 to-pink-500">
+        <div className="w-full text-white font-mono bg-cyan-800 flex justify-center py-4">
           <div className="container flex flex-col items-center py-4">
             <p className="text-xl font-bold">
-              Blog pessoal | Copyright: Sara Oliveira {data}
+              Blog pessoal | &copy; Sara Oliveira {data}
             </p>
             <p className="text-lg">Acesse nossas redes sociais</p>
             <div className="flex gap-2">

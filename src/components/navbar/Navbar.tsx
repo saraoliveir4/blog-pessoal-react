@@ -19,10 +19,10 @@ function Navbar() {
   if (usuario.token !== "") {
     navbarComponent = (
       <>
-        <div className="w-full bg-gradient-to-r from-purple-500 to-pink-500 flex justify-center py-4">
+        <div className="w-full text-white font-mono bg-cyan-800 flex justify-center py-5 px-16">
           <div className="container flex justify-between text-lg">
             <Link to="/home" className="text-2xl font-bold uppercase">
-              Blog Pessoal
+              MUSIC & MOVIES
             </Link>
 
             <div className="flex gap-4">
